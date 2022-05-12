@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ClampState</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#top").load("_top.html");
+        $("#bottom").load("_bottom.html");
+      });
+    </script>
+    <!--styles.css-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Animate On Scroll AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate On Scroll AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <!-- content goes here -->
+
+    <!-- begin carousel-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/images/carousel/1.jpeg.jpg"
+            class="d-block w-100"
+            alt="We assess our clients abilities and decipher what method of
+            training is best for them."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tailored Training</h5>
+            <p>
+              We assess our clients abilities and decipher what method of
+              training is best for them.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/carousel/2.jpg.jpg"
+            class="d-block w-100"
+            alt="Soccer is a game that has always allowed for young people to
+            thrive and we believe in keeping this tradition alive."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Invest in Youth</h5>
+            <p>
+              Soccer is a game that has always allowed for young people to
+              thrive and we believe in keeping this tradition alive.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/carousel/3.jpg.jpg"
+            class="d-block w-100"
+            alt="If we identify a player we think is underrated we make it our
+            mission to help them get the recognition they deserve."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Certified Clampers</h5>
+            <p>
+              If we identify a player we think is underrated we make it our
+              mission to help them get the recognition they deserve.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="ratio ratio-16x9 carousel-alternate">
+      <iframe
+        src="https://www.youtube.com/embed/cpIwMZ3cUEc"
+        title="Youtube Video"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+    <!--end carousel-->
+
+    <!-- Font Awesome Row Begin-->
+    <div class="container-fluid text-center fa-row">
+      <div class="row">
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-futbol fa-row-icon"></i> <br />
+          <a href="#">Soccer Philosophy</a>
+        </div>
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-person-running fa-row-icon"></i> <br />
+          <a href="#">Workouts</a>
+        </div>
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-school fa-row-icon"></i> <br />
+          <a href="#">Headquarters</a>
+        </div>
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-user-group fa-row-icon"></i> <br />
+          <a href="#">Ballers</a>
+        </div>
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-address-book fa-row-icon"></i> <br />
+          <a href="#">Contacts</a>
+        </div>
+        <div
+          class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <i class="fa-solid fa-money-bill fa-row-icon"></i> <br />
+          <a href="#">Business Inquiries</a>
+        </div>
+      </div>
+    </div>
+    <!-- Font Awesome Row end -->
+
+    <!-- first description section begin -->
+    <div class="container volunteer-div google-font" data-aos="fade-up">
+      <div class="row">
+        <div class="col">
+          <img
+            src="/images/general/volunteer.jpg.jpg"
+            class="img-responsive volunteer-img"
+            alt="Volunteer Opportunities"
+          />
+          <h2>Volunteer Opportunities</h2>
+          <p>
+            Volunteering as a coach is a great experience and it is also very
+            fun. Volunteering as a coach can seem challenging at first but there
+            are many benefits to it. You can give back to your community while
+            also being involved with a sport you love. It is a different way to
+            enjoy what you already like.
+          </p>
+
+          <p>
+            The main reason why this is a great experience is because you get to
+            mentor the next generation. Think back to your first great teacher
+            or coach that you think positively impacted your life. Due to their
+            help and guidance it might have led you to become who you are today
+            and you can become that same type of person for the next generation.
+          </p>
+
+          <p>
+            Another reason why is because this is a fulfilling job. You get to
+            see some of these players play their first games and as they develop
+            you can see the progress. It is a different type of happiness when a
+            player you coach scores his first goal after working hard in
+            training. Seeing the players develop not just on the field but off
+            the field will have you feeling a great sense of pride knowing you
+            had a hand in it.
+          </p>
+
+          <p>
+            Those are just a few of the reasons why volunteering is not only a
+            learning experience but it can be rewarding as well. There are
+            plenty more reasons why but you will have to come find out for
+            yourself. If you are interested please use the button below to sign
+            up to help.
+          </p>
+
+          <div>
+            <a href="form.html" class="btn btn-outline-primary btn-volunteer"
+              >Volunteer Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first description section end -->
+
+    <!-- Gallery begins -->
+    <div class="container text-center">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/1.jpg.jpg">
+            <img
+              src="/images/fancybox/thumbs/1.jpg.jpg"
+              class="img-responsive img-fancybox"
+              alt="Soccer Stadium"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/2.jpg.jpg">
+            <img
+              src="/images/fancybox/thumbs/2.jpg.jpg"
+              class="img-responsive img-fancybox"
+              alt="Soccer Ball"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/3.jpg.jpg">
+            <img
+              src="/images/fancybox/thumbs/3.jpg.jpg"
+              class="img-responsive img-fancybox"
+              alt="Player Dribbling"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="/images/fancybox/originals/4.jpg.jpg">
+            <img
+              src="/images/fancybox/thumbs/4.jpg.jpg"
+              class="img-responsive img-fancybox"
+              alt="Soccer Cleats"
+              data-aos="flip-left"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="row gallery-button">
+        <div class="col-12 text-center">
+          <a href="gallery.html" class="btn btn-outline-primary btn-gallery"
+            >View Gallery</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Gallery ends -->
+
+    <!-- second description begins -->
+    <div class="container contact-div google-font" data-aos="fade-up">
+      <div class="row">
+        <div class="col">
+          <img
+            src="/images/general/contact-us.jpg.jpg"
+            class="img-responsive contact-img"
+            alt="Contact Our Staff"
+          />
+          <h2>Contact Our Staff</h2>
+          <p>
+            Many people are interested in improving their soccer knowledge or
+            skill. Investing more time into yourself is one of the best things
+            you can do and leads to a successful life.
+          </p>
+
+          <p>
+            Here at ClampState we offer a plethora of opportunities to do that.
+            You can volunteer as a coach or if you are a player you can come to
+            one of our practices. The more you come out and improve there is
+            even a chance you become a featured Baller on our website.
+          </p>
+
+          <p>
+            While it may be a great source we know that our website doesn't
+            answer all questions. Before signing up for something it is always
+            smart to do research beforehand.
+          </p>
+
+          <p>
+            <strong>
+              Soccer is one of the oldest sports and is still the most popular
+              in the world. While being popular in the world it is still
+              increasing in popularity in the United States. There are many
+              other services like our website but they usually are very
+              expensive and biased. So if you have any questions on what sets us
+              apart and the many services we can offer you then please don't
+              hesitate to contact us.
+            </strong>
+          </p>
+
+          <div>
+            <a href="#footerInfo" class="btn btn-outline-primary btn-contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second description ends -->
+
+    <!-- members begin -->
+    <div class="container text-center staff" id="staff">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            src="/images/staff/thumbs/1.jpg.jpg"
+            alt="Callum Igbe"
+            class="cropped"
+            data-aos="zoom-in"
+          />
+          <br />
+          <blockquote>
+            I learned all about life with a ball at my feet.
+            <cite> Ronaldinho Gaucho </cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            src="/images/staff/thumbs/2.jpg.jpg"
+            alt="Josh Smith"
+            class="cropped"
+            data-aos="zoom-in"
+          />
+          <br />
+          <blockquote>
+            Talent without working hard is nothing.
+            <cite> Cristiano Ronaldo </cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            src="/images/staff/thumbs/3.jpg.jpg"
+            alt="Marcus Pinto"
+            class="cropped"
+            data-aos="zoom-in"
+          />
+          <br />
+          <blockquote>
+            The secret is to believe in your dreams; in your potential that you
+            can be like your star, keep searching, keep believing and don’t lose
+            faith in yourself.
+            <cite> Neymar Jr. </cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- members end -->
+
+    <!-- content goes here -->
+    <div id="bottom"></div>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
